@@ -19,9 +19,6 @@ def calculate_15_minute_intervals(target_time_str):
     intervals = round(time_difference.total_seconds() / (15 * 60))
     return intervals
 
-# df = pd.read_csv('/Users/FreddieLewin/PycharmProjects/durham_river_level_predictor/data_directory/river_level_data_4.csv')
-# plt.plot(df['Height (m)'])
-# plt.show()
 
 def predicted_river_level_linear(start_time):
     number_of_intervals = calculate_15_minute_intervals(target_time_str=start_time)
