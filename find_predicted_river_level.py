@@ -9,7 +9,6 @@ from datetime import datetime, timedelta
 from import_csv_data.gov_uk_data_csv_file import download_river_level_data
 
 
-
 def calculate_15_minute_intervals(target_time_str):
     current_time = datetime.now().time()
     target_time = datetime.strptime(target_time_str, '%H:%M').time()
